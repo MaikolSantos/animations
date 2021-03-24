@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #010101;
+}
+
+svg {
+    display: block;
+    max-width: 40%;
+    margin-top: 50px;
+}
+
+/* Usar as animações de ball para loading*/
+
+.ball {
+    transform: scale(1);
+}
+.ball-1 {
+    animation: orange-ball 1s ease-out 1s infinite alternate-reverse;
+}
+.ball-2 {
+    animation: orange-ball 1s ease-out 0.8s infinite alternate-reverse;
+}
+.ball-3 {
+    animation: orange-ball 1s ease-out 1.2s infinite alternate-reverse;
+}
+.ball-4 {
+    animation: orange-ball 1s ease-out 1.4s infinite alternate-reverse;
+}
+
+
+@keyframes orange-ball {
+    from {
+        transform: scale(-3);
+    }
+}
+
+.line {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+}
+
+.line-1 {
+    animation: line 2s ease-in 1.5s infinite;
+}
+.line-2 {
+    animation: line 2s ease-in 1.2s infinite;
+}
+.line-3 {
+    animation: line 2s ease-in 2s infinite;
+}
+.line-4 {
+    animation: line 2s ease-in 1.6s infinite;
+}
+
+
+@keyframes line {
+    0%{
+        stroke-dasharray: 800;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dasharray: 800;
+        stroke-dashoffset: 1600;
+    }
+}
+
+.shine {
+    opacity: 0.5;
+    animation: shine 2s ease-in  infinite alternate;
+}
+
+@keyframes shine {
+    from{
+        opacity: 1;
+    }
+}
