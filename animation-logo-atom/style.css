@@ -18,7 +18,7 @@ svg {
     margin-top: 50px;
 }
 
-/* Usar as animações de ball para loading*/
+/* Usar as animações de ball para loading
 
 .ball {
     transform: scale(1);
@@ -41,7 +41,7 @@ svg {
     from {
         transform: scale(-3);
     }
-}
+} */
 
 .line {
     stroke-dasharray: 0;
@@ -49,10 +49,10 @@ svg {
 }
 
 .line-1 {
-    animation: line 2s ease-in 1.5s infinite;
+    animation: line 2s ease-in infinite;
 }
 .line-2 {
-    animation: line 2s ease-in 1.2s infinite;
+    animation: line 2s ease-in 0.4s infinite;
 }
 .line-3 {
     animation: line 2s ease-in 2s infinite;
